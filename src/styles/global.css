@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap'); /* Titles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); /* Subtitles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap'); /* Text */
+@import "tailwindcss";
+
+h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: normal;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-style: normal;
+  color: #ddddf0;
+}
+
+p {
+  font-family: "DM Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #6868a0;
+}

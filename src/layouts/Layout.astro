@@ -1,14 +1,24 @@
+---
+import "../styles/global.css";
+
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Cards from "../components/Cards/Cards.astro"
+---
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>Martin Bravo - Personal Portfolio</title>
 		<meta charset="UTF-8" />
+		<meta name="generator" content={Astro.generator} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
 	</head>
 	<body>
+		<Header />
+		<Hero />
+		<Cards />
 		<slot />
 	</body>
 </html>
@@ -19,5 +29,6 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		background-color: #080810;
 	}
 </style>
