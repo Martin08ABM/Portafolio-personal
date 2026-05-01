@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap'); /* Titles */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); /* Subtitles */
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap'); /* Text */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap'); /* Lists */
 @import "tailwindcss";
 
 h1 {
@@ -17,6 +18,22 @@ h2 {
   font-weight: 800;
   font-style: normal;
   color: #ddddf0;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #ddddf0;
+}
+
+li {
+  font-family: "DM Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #ddfde0;
 }
 
 p {

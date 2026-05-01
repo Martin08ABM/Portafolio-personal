@@ -1,6 +1,8 @@
-<section class="border-2 border-[#ff4f6a] px-6 py-4 max-w-1/4">
-  <h3 class="text-neutral-400 text-3xl font-bold mb-6">Ghostchat Messenger</h3>
-  <img src="/ghostchat.png" alt="Ghostchat Messenger image" class="border border-neutral-600 mb-8" />
+<section class="border-2 border-[#ff4f6a] px-6 py-4 w-full lg:max-w-1/4 hover:border-pink-500 transition-all ease-in-out duration-300 hover:scale-105">
+  <h3 class="text-neutral-200 text-3xl font-bold mb-6">Ghostchat Messenger</h3>
+  <a href="https://ghostchat-messenger.xyz/" target="_blank">
+    <img src="/ghostchat.png" alt="Ghostchat Messenger image" class="border border-neutral-600 mb-8 w-full" />
+  </a>
   <p>
     Aplicación de mensajería cifrada de extremo a extremo construida con Python,
     FastAPI y WebSockets. Implementa ECDH + AES-256-GCM para cifrado cliente a
@@ -9,15 +11,17 @@
   </p>
   <div class="text-white mt-6">
     <h4 class="text-xl text-neutral-200 font-bold">Tecnologías usadas:</h4>
-    <ul class="flex flex-row justify-around mt-4 text-neutral-500">
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>CSS</li>
-      <li>HTML</li>
+    <ul class="flex flex-row flex-wrap justify-around mt-4 text-neutral-500 gap-2">
+      <li class="px-2 py-1 border border-neutral-600 text-neutral-400 text-sm rounded">Python</li>
+      <li class="px-2 py-1 border border-neutral-600 text-neutral-400 text-sm rounded">Javascript</li>
+      <li class="px-2 py-1 border border-neutral-600 text-neutral-400 text-sm rounded">CSS</li>
+      <li class="px-2 py-1 border border-neutral-600 text-neutral-400 text-sm rounded">HTML</li>
     </ul>
   </div>
   <div class="flex flex-col align-middle py-4 text-[1rem] text-blue-600 font-extrabold">
-    <a href="">Ver en Github</a>
-    <a href="">Enlace</a>
+    <div class="flex flex-row gap-4 py-4">
+      <a href="https://github.com/Martin08ABM/ghostchat-messenger" class="text-sm text-neutral-400 hover:text-white transition-colors" target="_blank">Github ↗</a>
+      <a href="https://ghostchat-messenger.xyz/" class="text-sm text-green-500 hover:text-green-400 transition-colors" target="_blank">Ver el proyecto ↗</a>
+    </div>
   </div>
 </section>

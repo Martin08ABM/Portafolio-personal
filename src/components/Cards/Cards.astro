@@ -1,11 +1,18 @@
 ---
-import Card1 from "./Card1.astro"
+import Card1 from "./Card1.astro";
+import Card2 from "./Card2.astro";
+import Card3 from "./Card3.astro";
 ---
-<div class="ml-8 -translate-y-52" id="proyectos">
-  <h2>Mis proyectos</h2>
-  <div class="w-full bg-transparent px-8 py-2 items-center justify-center flex flex-row">
-    <div class="justify-between px-8 py-6">
-      <Card1 />
+
+<div class="mx-auto" id="proyectos">
+    <h2 class="text-center mb-6">Mis Proyectos</h2>
+    <div
+        class="w-full bg-transparent px-4 lg:px-8 py-2 items-center justify-center flex"
+    >
+        <div class="w-full justify-around px-4 lg:px-8 py-6 flex flex-col lg:flex-row gap-6">
+            <Card1 />
+            <Card2 />
+            <Card3 />
+        </div>
     </div>
-  </div>
 </div>
