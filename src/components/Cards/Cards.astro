@@ -1,20 +1,58 @@
 ---
-import Card1 from "./Card1.astro";
-import Card2 from "./Card2.astro";
-import Card3 from "./Card3.astro";
-import Card4 from "./Card4.astro";
-import Card5 from "./Card5.astro";
+import Card from "./Card.astro";
+
+const projects = [
+  {
+    title: "Configurador de Infraestructura",
+    image: "/configurador-infraestructura.png",
+    imageAlt: "Configurador de Infraestructura image",
+    description: "Aplicación web completa que permite a clientes contratar servicios de infraestructura de forma autónoma. El cliente selecciona los servicios que necesita, rellena sus datos y paga online. Tras el pago, el contrato se genera automáticamente en PDF y se envía por email junto al recibo.",
+    techs: ["Next.js", "TypeScript", "Supabase", "Stripe", "Resend", "pdf-lib"],
+    githubUrl: "https://github.com/Martin08ABM/Configurador.web-infraestructura",
+    liveUrl: "https://configurador.martin-bravo.dev/",
+  },
+  {
+    title: "Landing Infraestructura",
+    image: "/landing-infraestructura.png",
+    imageAlt: "Landing Infraestructura image",
+    description: "Landing page de servicios de infraestructura freelance orientada a pymes. Diseñada para explicar la propuesta de valor del self-hosting frente a soluciones SaaS como Google Workspace o Dropbox, con secciones de servicios, precios y contacto.",
+    techs: ["Astro.js", "TypeScript", "CSS"],
+    githubUrl: "https://github.com/Martin08ABM/martin-infraestructura-landing",
+    liveUrl: "https://infraestructura.martin-bravo.dev/",
+  },
+  {
+    title: "Ghostchat Messenger",
+    image: "/ghostchat.png",
+    imageAlt: "Ghostchat Messenger image",
+    description: "Aplicación de mensajería cifrada de extremo a extremo construida con Python, FastAPI y WebSockets. Implementa ECDH + AES-256-GCM para cifrado cliente a cliente, identidades anónimas y arquitectura de relay server sin almacenamiento de mensajes.",
+    techs: ["Python", "Javascript", "CSS", "HTML"],
+    githubUrl: "https://github.com/Martin08ABM/ghostchat-messenger",
+    liveUrl: "https://ghostchat-messenger.xyz/",
+  },
+  {
+    title: "Optimiseo",
+    image: "/optimiseo.png",
+    imageAlt: "Optimiseo image",
+    description: "SaaS de análisis y optimización SEO construido con Next.js, TypeScript y Supabase, con IA integrada mediante la API de Claude. Desplegado en producción en optimiseo.pro.",
+    techs: ["Next.js", "TypeScript", "TailwindCSS"],
+    githubUrl: "https://github.com/Martin08ABM/Optimiseo",
+    liveUrl: "https://www.optimiseo.pro/",
+  },
+  {
+    title: "martin-bravo.dev",
+    image: "/martin.dev.png",
+    imageAlt: "martin-bravo.dev image",
+    description: "Mi espacio en internet. Diseñado y desplegado desde cero para mostrar lo que construyo.",
+    techs: ["Astro.js", "CSS"],
+    githubUrl: "https://github.com/Martin08ABM/Portafolio-personal",
+    liveUrl: "https://martin-bravo.dev/",
+  },
+];
 ---
 
-<div class="mx-auto" id="proyectos">
-    <h2 class="text-center mb-6">Mis Proyectos</h2>
-    <div class="w-full px-4 lg:px-8 py-2">
-        <div class="grid grid-cols-1 lg:grid-cols-6 gap-6 px-4 lg:px-8">
-            <div class="flex lg:col-start-2 lg:col-span-2"><Card4 /></div>
-            <div class="flex lg:col-start-4 lg:col-span-2"><Card5 /></div>
-            <div class="flex lg:col-span-2"><Card1 /></div>
-            <div class="flex lg:col-span-2"><Card2 /></div>
-            <div class="flex lg:col-span-2"><Card3 /></div>
-        </div>
-    </div>
+<div class="mx-auto max-w-6xl px-4 py-2" id="proyectos">
+  <h2 class="text-center mb-6">Mis Proyectos</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {projects.map((project) => <Card {...project} />)}
+  </div>
 </div>
